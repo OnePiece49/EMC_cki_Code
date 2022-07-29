@@ -64,9 +64,9 @@ int main()
         }
         printf("=> Zc = %f\n", Zc);
         L = Zc*sqrt(epxilon_phay)/3;
-        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f //chia chia 10^8\n", L);
+        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f //chua chia 10^8\n", L);
         C = L / pow(Zc, 2);
-        printf("=> C = L/(Zc ^ 2) = %f //chia chia 10^8\n", C);
+        printf("=> C = L/(Zc ^ 2) = %f //chua chia 10^8\n", C);
     }
 
     if (option == 3) {
@@ -94,9 +94,9 @@ int main()
         }
         printf("=> Zc = %f\n", Zc);
         L = Zc*sqrt(epxilon_phay)/3;
-        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f //chia chia 10^8\n", L);
+        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f //chua chia 10^8\n", L);
         C = L / pow(Zc, 2);
-        printf("=> C = L/(Zc ^ 2) = %f //chia chia 10^8\n", C);
+        printf("=> C = L/(Zc ^ 2) = %f //chua chia 10^8\n", C);
     }
 
     if (option == 4) {
