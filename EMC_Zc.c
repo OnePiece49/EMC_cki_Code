@@ -40,10 +40,10 @@ int main()
         printf("=> We/s = %f\n", We);
         Zc = (30 * PI) / sqrt(epxilon) / (We + 0.441);
         printf("=> Zc = %f\n", Zc);
-        L = Zc*sqrt(epxilon)/3;
-        printf("=> L = Zc/v = Zc * sqrt(epxilon)/ Vo = %f //chia chia 10^8\n", L);
-        C = L / pow(Zc, 2);
-        printf("=> C = L/(Zc ^ 2) = %f //chia chia 10^8\n", C);
+        L = Zc*sqrt(epxilon)/3 / 100;
+        printf("=> L = Zc/v = Zc * sqrt(epxilon)/ Vo = %f(uH/m)\n", L);
+        C = L / pow(Zc, 2) * 1000000;
+        printf("=> C = L/(Zc ^ 2) = %f(pF/m). \n", C);
     }
 
     if (option == 2) {
@@ -63,10 +63,10 @@ int main()
             Zc = 120 *PI / sqrt(epxilon_phay) * (w/h + 1.393 + 0.667 * log(w/h + 1.4444));
         }
         printf("=> Zc = %f\n", Zc);
-        L = Zc*sqrt(epxilon_phay)/3;
-        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f //chua chia 10^8\n", L);
-        C = L / pow(Zc, 2);
-        printf("=> C = L/(Zc ^ 2) = %f //chua chia 10^8\n", C);
+        L = Zc*sqrt(epxilon_phay)/3 / 100;
+        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f(uH/m)\n", L);
+        C = L / pow(Zc, 2) * 1000000;
+        printf("=> C = L/(Zc ^ 2) = %f(pF/m). \n", C);
     }
 
     if (option == 3) {
@@ -93,10 +93,10 @@ int main()
             Zc = 377 * PI / sqrt(epxilon_phay) / log(2 *(1 + sqrt(k_phay)) / (1 - sqrt(k_phay)));
         }
         printf("=> Zc = %f\n", Zc);
-        L = Zc*sqrt(epxilon_phay)/3;
-        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f //chua chia 10^8\n", L);
-        C = L / pow(Zc, 2);
-        printf("=> C = L/(Zc ^ 2) = %f //chua chia 10^8\n", C);
+        L = Zc*sqrt(epxilon_phay)/3 / 100;
+        printf("=> L = Zc/v = Zc * sqrt(epxilon_phay)/ Vo = %f(uH/m)\n", L);
+        C = L / pow(Zc, 2) * 1000000;
+        printf("=> C = L/(Zc ^ 2) = %f(pF/m). \n", C);
     }
 
     if (option == 4) {
